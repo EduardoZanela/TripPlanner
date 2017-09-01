@@ -1,5 +1,6 @@
 package br.com.tripplanner.models;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
 import javax.persistence.Entity;
@@ -8,7 +9,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity(name="trip")
-public class Trip {
+public class Trip implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	
+	//TODO Implementar metodo tostring hash equals e ver pra ser user unico por login
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -17,7 +22,7 @@ public class Trip {
 	private String destination;
 	private String origin;
 	private Calendar trip_date;
-	
+	private String imagePath;
 	public Long getId() {
 		return id;
 	}
@@ -47,5 +52,11 @@ public class Trip {
 	}
 	public void setTrip_date(Calendar trip_date) {
 		this.trip_date = trip_date;
+	}
+	public String getImagePath() {
+		return imagePath;
+	}
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
 	}
 }
