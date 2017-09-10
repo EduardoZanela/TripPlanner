@@ -1,4 +1,4 @@
-package br.com.tripplanner.models;
+package br.com.tripplanner.model;
 
 import java.io.Serializable;
 import java.util.Calendar;

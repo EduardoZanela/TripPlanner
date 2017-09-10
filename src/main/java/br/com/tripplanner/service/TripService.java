@@ -1,9 +1,9 @@
-package br.com.tripplanner.services;
+package br.com.tripplanner.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.tripplanner.models.Trip;
+import br.com.tripplanner.model.Trip;
 import br.com.tripplanner.repository.TripRepository;
 
 @Service

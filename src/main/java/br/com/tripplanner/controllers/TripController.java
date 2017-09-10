@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.WebApplicationContext;
 
-import br.com.tripplanner.models.Trip;
-import br.com.tripplanner.services.TripService;
+import br.com.tripplanner.model.Trip;
+import br.com.tripplanner.service.TripService;
 
 
 @RestController
