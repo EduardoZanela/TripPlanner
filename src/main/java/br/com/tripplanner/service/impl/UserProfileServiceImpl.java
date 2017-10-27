@@ -50,7 +50,6 @@ public class UserProfileServiceImpl implements UserProfileService{
 	@Override
 	public UserProfile saveProfile(UserProfile user) {
 		ArrayList<Authority> arrayList = new ArrayList<>();
-		System.out.println("OLA"+ authorityRepository.findOne(1L).getName());
 		arrayList.add(authorityRepository.findOne(1L));
 		user.setAuthorities(arrayList);
 		return userProfileRepository.save(user);
